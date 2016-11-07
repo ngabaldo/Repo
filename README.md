@@ -37,24 +37,8 @@ The program generates 3 outputs:
 
 4) Running the program
 run.sh is the shell script used to run the programs. It must be placed on the folder containing paymo_input, paymo_output, and src.
-The shell script has the following form:
-
-#!/bin/bash
-#SBATCH --job-name="python"
-#SBATCH --output="python.%j.%N.out"
-#SBATCH --partition=shared
-#SBATCH --share
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=1
-#SBATCH --export=ALL
-#SBATCH -t 48:00:00
-module load python
-cd paymo_output
-cp ../src/antifraud.py .
-cp ../paymo_input/batch_payment.csv .
-cp ../paymo_input/stream_payment.csv .
-./antifraud.py
-rm batch_payment.csv
-rm stream_payment.csv
-rm antifraud.py
+The shell script moves into the paymo_output folder and it copies antifraud.py, batch_payment.csv, and stream_payment.csv. This way
+the program does not have to move between folders to run. 
+run.sh deletes the copied files at the end, so only output1.txt, output2.txt, and output3.txt are left inside the paymo_output
+folder.
 
