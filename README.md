@@ -12,10 +12,13 @@ of Output1.txt if the user only wants to implement Feature 1.
 If no update is desired, the lines can be commented out. These lines append the new value to the
 previous hisory and appear immediately after a transaction is marked as 'trusted'.
 
+Lines that are entered incorrectly as input data will not be taken into account in the output file
+(i.e. "Some line of text" that is entered instead of the date, time, userA, userB, amount, and message).
 
 
 2) Input files:
-The program reads in .csv files. Only two files are needed:
+The program reads in .csv files. The .csv files have the following information: time, id1, id2, amount,
+optional message. id1 refers to UserA and id2 refers to UserB. Only two files are needed:
 
   a) batch_payment.csv
   Contains information about the previous transaction history of all users.
