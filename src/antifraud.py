@@ -1,4 +1,4 @@
-#!python3
+#!/usr/bin/python
 #! antifraud.py - A program that prevents fraudulent payment requests from untrusted users
 
 import re
@@ -24,7 +24,7 @@ re_groups = re.compile(r'''
 	(\s*)               #space
 	([0-9]+)            #id2
 	)''',re.VERBOSE)
-with open('batch_payment.csv','r',encoding='utf-8') as myfile:
+with open('batch_payment.txt','r') as myfile:
     for line in myfile:
         #Look for regular expresson M/D/Y H:M(:S), id1, id2.
         mo = re_groups.findall(line)
@@ -54,7 +54,7 @@ previous_transactions3 = previous_transactions
 feature1file = open('output1.txt','w')
 feature2file = open('output2.txt','w')
 feature3file = open('output3.txt','w')
-with open('stream_payment.csv','r',encoding='utf-8') as myfile:
+with open('stream_payment.txt','r') as myfile:
     for line in myfile:
         #Look for regular expresson M/D/Y H:M(:S), id1, id2.
         mo = re_groups.findall(line)
