@@ -1,7 +1,7 @@
 1) Program description
 antifraud.py is a Python program that detects fraudulent payment requests from untrusted users
-when UserA makes a money transaction to UserB. The program runs with standard moudles (there is 
-no need to download any additoinal modules).
+when UserA makes a money transaction to UserB. The program runs with standard modules (there is 
+no need to download any additional modules).
 
 antifraud.py detects 'trusted' and 'unverified' transactions between UserA and UserB. When a 
 transaction is marked as 'trusted', the history of transactions between UserA and UserB is
