@@ -9,22 +9,21 @@ updated (see (3) Output files to see how 'trusted' transactions are defined). Ea
 is updated independently of the other features, so updating for Feature 3 does not affect the result 
 of Output1.txt if the user only wants to implement Feature 1.
 
-If no update is desired, the lines can be commented out. These lines append the new value to the
-previous hisory and appear immediately after a transaction is marked as 'trusted'.
-
 Lines that are entered incorrectly as input data will not be taken into account in the output file
-(i.e. "Some line of text" that is entered instead of the date, time, userA, userB, amount, and message).
+(i.e. "Some line of text" that is entered instead of the date, time, userA, userB, amount, and message
+will be skipped by the program).
 
 
 2) Input files:
-The program reads in .csv files. The .csv files have the following information: time, id1, id2, amount,
-optional message. id1 refers to UserA and id2 refers to UserB. Only two files are needed:
+The program reads in .txt files that have the following information: date and time, id1, id2, amount,
+optional message. These values must be separated by a comma. id1 refers to UserA and id2 refers to UserB. 
+Only two files are needed:
 
-  a) batch_payment.csv
+  a) batch_payment.txt
   Contains information about the previous transaction history of all users.
   
-  b)stream_payment.csv
-  Contains information about new transaction requests. Every line of stream_payment.csv is 
+  b)stream_payment.txt
+  Contains information about new transaction requests. Every line of stream_payment.txt is 
   considered to be a new transaction. If A makes a new transaction to B, he will be notified. 
   If A makes another transaction to B, there will be no new notifications.
   
@@ -52,7 +51,7 @@ The program generates 3 outputs:
 4) Running the program
 run.sh is the shell script used to run the programs. It must be placed on the folder containing paymo_input, 
 paymo_output, and src. The shell script moves into the paymo_output folder and it copies antifraud.py, 
-batch_payment.csv, and stream_payment.csv. This way the program does not have to move between folders to run. 
+batch_payment.txt, and stream_payment.txt. This way the program does not have to move between folders to run. 
 run.sh deletes the copied files at the end, so only output1.txt, output2.txt, and output3.txt are left inside 
 the paymo_output folder.
 
