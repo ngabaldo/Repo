@@ -1,58 +1,24 @@
-1) Program description
-antifraud.py is a Python program that detects fraudulent payment requests from untrusted users
-when UserA makes a money transaction to UserB. The program runs with standard modules (there is 
-no need to download any additional modules).
+1) Program description 
+src.py is a Python program that runs with standard modules (there is no need to download any additional modules). The program: 
+(1) Lists the top 10 most active hosts/PI addresses that have accessed the site. 
+(2) Identifies the 10 resources that consume the most bandwith on the site. 
+(3) Lists the top 10 busiest (or most requently visited) 60-minute periods. 
+(4) Detects patterns of three failed login attempts from the same IP address over 20 seconds so that all further attempts to the site can be blocked for 5 minutes and logs those further attempts.
 
-antifraud.py detects 'trusted' and 'unverified' transactions between UserA and UserB. When a 
-transaction is marked as 'trusted', the history of transactions between UserA and UserB is
-updated (see (3) Output files to see how 'trusted' transactions are defined). Each feature history 
-is updated independently of the other features, so updating for Feature 3 does not affect the result 
-of Output1.txt if the user only wants to implement Feature 1.
+2) Input files 
+The program reads in a ".txt" file that has the following information: 
+(1) Host/IP address. 
+(2) Timestamp in the format [DD/MON/YYYY:HH:MM:SS Z], where DD is the day of the month, MON is the abbreviated name of the month, YYYY is the year, HH:MM:SS is the time of day using a 24-hour clock. Z is the timezone (the program is time- zone aware) 
+(3) Request given in quotes. 
+(4) HTTP reply code. 
+(5) Bytes in the reply. A reply listed as "-" is counted as 0 bytes.
 
-Lines that are entered incorrectly as input data will not be taken into account in the output file
-(i.e. "Some line of text" that is entered instead of the date, time, userA, userB, amount, and message
-will be skipped by the program).
+3) Output files
+The program generates 4 outputs: 
+(1) The top 10 most active hosts/IP addresses are printed in descending order to a file named "hosts.txt". The number of times they accessed any part of the site is printed next to the host/IP address. 
+(2) The top 10 resources on the site that consume the most bandwidth are printed in descending order to a file named "resources.txt". 
+(3) The 10 busiest 60-minute period are printed in descending order to a file named "hours.txt". The number of times the site was accessed during those 60 minutes are printed next to the hour where the 60-minute period starts. 
+(4) The attempts to enter the site from the same host/IP address after 3 failed attempts (HTTP reply code of 401) to login (all three attempts within a 20 seconds window) are written to a file named "blocked.txt". This attempts will be shown for the next 5 minutes after the 3rd failed attempt to login.
 
-
-
-2) Input files:
-The program reads in .txt files that have the following information: date and time, id1, id2, amount,
-optional message. These values must be separated by a comma. id1 refers to UserA and id2 refers to UserB. 
-Only two files are needed:
-
-  a) batch_payment.txt
-  Contains information about the previous transaction history of all users.
-  
-  b)stream_payment.txt
-  Contains information about new transaction requests. Every line of stream_payment.txt is 
-  considered to be a new ral-time transaction. 
-  
-  
-  
-3) Output files:
-The program generates 3 outputs:
-
-  a) output1.txt:
-  This output is generated for Feature 1. The user will be notified if he tries to make a payment 
-  to another user when they have not had any transaction between them before.
-
-  b) output2.txt:
-  This output is generated for Feature 2. The user will be notified if he tries to make a payment to 
-  another user when they have not had any transaction between them before, unless they have had a 
-  transaction with someone in common ("2nd degree friends").
-
-  c) output3.txt:
-  This output is generated for Feature 3. The user will be notified if he tries to make a payment to 
-  another user when they have not had any transaction between them before, unless the second user is 
-  inside a "4th degree friend circle".
-
-
-
-4) Running the program
-run.sh is the shell script used to run the programs. It must be placed on the folder containing paymo_input, 
-paymo_output, and src. The shell script moves into the paymo_output folder and it copies antifraud.py, 
-batch_payment.txt, and stream_payment.txt. This way the program does not have to move between folders to run. 
-run.sh deletes the copied files at the end, so only output1.txt, output2.txt, and output3.txt are left inside 
-the paymo_output folder.
-
-
+4) Running the program 
+scr.py only needs the input file to run. All lines in the input file that deviate from the information described in (2) will be ignored.
