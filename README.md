@@ -1,7 +1,7 @@
 1) Program description 
 
 src.py is a Python program that runs with standard modules (there is no need to download any additional modules). The program: 
-(1) Lists the top 10 most active hosts/PI addresses that have accessed the site. 
+_(1) Lists the top 10 most active hosts/PI addresses that have accessed the site. 
 (2) Identifies the 10 resources that consume the most bandwith on the site. 
 (3) Lists the top 10 busiest (or most requently visited) 60-minute periods. 
 (4) Detects patterns of three failed login attempts from the same IP address over 20 seconds so that all further attempts to the site can be blocked for 5 minutes and logs those further attempts.
