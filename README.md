@@ -18,7 +18,7 @@ The program reads in a ".txt" file that has the following information:
 3) Output files
 
 The program generates 4 outputs: 
-(1) The top 10 most active hosts/IP addresses are printed in descending order to a file named "hosts.txt". The number of times they accessed any part of the site is printed next to the host/IP address. The program is capable of reading host/IP addresses with special chacarcters in them such as _, @, #, ^, &, *, (, ), %, +, /, \, and ?. 
+(1) The top 10 most active hosts/IP addresses are printed in descending order to a file named "hosts.txt". The number of times they accessed any part of the site is printed next to the host/IP address. The program is capable of reading host/IP addresses with special chacarcters in them such as _, @, #, ^, &, *, (, ), %, +, /, \\, and ?. 
 (2) The top 10 resources on the site that consume the most bandwidth are printed in descending order to a file named "resources.txt". 
 (3) The 10 busiest 60-minute period are printed in descending order to a file named "hours.txt". The number of times the site was accessed during those 60 minutes are printed next to the hour where the 60-minute period starts. 
 (4) The attempts to enter the site from the same host/IP address after 3 failed attempts (HTTP reply code of 401) to login (all three attempts within a 20 seconds window) are written to a file named "blocked.txt". This attempts will be shown for the next 5 minutes after the 3rd failed attempt to login.
