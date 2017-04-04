@@ -1,5 +1,4 @@
 1) Program description 
-
 src.py is a Python program that runs with standard modules (there is no need to download any additional modules). The program:
 
 (1) Lists the top 10 most active hosts/PI addresses that have accessed the site. 
@@ -14,7 +13,6 @@ src.py is a Python program that runs with standard modules (there is no need to 
 
 
 2) Input files 
-
 The program reads in a ".txt" file that has the following information: 
 
 (1) Host/IP address. 
@@ -31,7 +29,6 @@ The program reads in a ".txt" file that has the following information:
 
 
 3) Output files
-
 The program generates 4 outputs: 
 
 (1) The top 10 most active hosts/IP addresses are printed in descending order to a file named "hosts.txt". The number of times they accessed any part of the site is printed next to the host/IP address. The program is capable of reading host/IP addresses with special chacarcters in them such as _, @, #, ^, &, *, (, ), %, +, /, \\, and ?. 
@@ -45,5 +42,4 @@ The program generates 4 outputs:
 
 
 4) Running the program 
-
 scr.py only needs the input file to run. Blank lines in the input file will be ignored. All lines in the input file that deviate from the information described in (2) will be ignored but will be printed to the "errors.txt" output file to analyze separately. 
