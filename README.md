@@ -25,4 +25,4 @@ The program generates 4 outputs:
 
 4) Running the program 
 
-scr.py only needs the input file to run. All lines in the input file that deviate from the information described in (2) will be ignored.
+scr.py only needs the input file to run. Blank lines in the input file will be ignored. All lines in the input file that deviate from the information described in (2) will be ignored but will be printed to the "errors.txt" output file to analyze separately. 
