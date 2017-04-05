@@ -1,5 +1,5 @@
 ------------------------------------------------------------------
-NOTE: src.py needs the pytz module to run. The tests were run on a desktop computer, but I cannot access the pytz module in the cluster where I run .sh files. That is why I could not run "run_results.sh", but the results from the desktop computer seemed correct in all cases. 
+NOTE: src.py needs the pytz module to run to make it timezone aware. The tests were run on a desktop computer, but I cannot access the pytz module in the cluster where I run .sh files. That is why I could not run "run_results.sh", but the results from the desktop computer seemed correct in all cases. 
 ------------------------------------------------------------------
 
 1) Program description 
