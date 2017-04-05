@@ -1,10 +1,10 @@
 207.246.17.94,21
 207.109.29.70,4
 ix-aus1-04.ix.netcom.com,3
-blazemonger.pc.cc.cmu.edu,2
 a&s26.uwyo.edu,2
+blazemonger.pc.cc.cmu.edu,2
 gate.texaco.com,2
-dd01-076.compuserve.com,1
-215.196.44.15,1
-ppp-mia-79.shadow.net,1
-208.:::271.69.50,1
+163.205.12.75,1
+202.251.172.60,1
+202.6.90.68,1
+207.1***09.29.70,1
