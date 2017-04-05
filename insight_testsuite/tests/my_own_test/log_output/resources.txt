@@ -1,0 +1,10 @@
+/login
+/shuttle/technology/sts-newsref/sts-lcc.html
+/htbin/wais.pl?apollo+flight
+/shuttle/missions/sts-70/images/images.html
+/history/history.html
+/logout
+/htbin/cdt_clock.pl
+/htbin/wais.pl?sati*
+/mafc/astro_home.html(2k)
+/L^??|
