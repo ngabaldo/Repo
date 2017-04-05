@@ -11,7 +11,8 @@ src.py is a Python program that:
 (4) Detects patterns of three failed login attempts from the same IP address over 20 seconds so that all further attempts to the site can be blocked for 5 minutes and logs those further attempts.
 
 ------------------------------------------------------------------
-__NOTE: src.py needs the pytz module to run. The tests were run on a desktop computer, but the cluster to run 
+NOTE: src.py needs the pytz module to run. The tests were run on a desktop computer, but I cannot access the pytz module in the cluster where I run .sh files. That is why I could not run "run_results.sh", but the results from the desktop computer seemed correct in all cases. 
+------------------------------------------------------------------
 
 
 2) Input files 
