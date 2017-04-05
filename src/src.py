@@ -29,7 +29,7 @@ IP_address_fails = {}
 feature4file = open('blocked.txt','w')
 errorsfile = open('errors.txt','w')
 re_groups = re.compile(r'''(
-[a-zA-Z0-9:._@#^&*()%+-/\?]+              #first section of web page
+[a-zA-Z0-9:._@#^&*()%+-/\?]+
 )''',re.VERBOSE)
 re_resource = re.compile(r'''(
 ".*?"
@@ -44,12 +44,12 @@ with open('log.txt','r') as myfile:
             website = mo[0]
             resource_list = mu[0].split()
             resource = resource_list[1]
-            #Regular expressions for Feature 1
+            #Regular expressions for Feature 1.
             try:
                 weblist[website] = weblist[website]+ 1
             except KeyError:
                 weblist[website] = 1
-            #Regular expressions for Feature 2
+            #Regular expressions for Feature 2.
             if resource in resourcelist:
                 try:
                     resourcelist[resource] = resourcelist[resource] + int(mo[-1])
@@ -60,19 +60,19 @@ with open('log.txt','r') as myfile:
                     resourcelist[resource] = int(mo[-1])
                 except ValueError:
                     resourcelist[resource] = 0
-            #Regular expressions for Feature 3
+            #Regular expressions for Feature 3.
             date = mo[3].split('/')
             hour = mo[3].split(':')
             year1 = hour[0].split('/')
             year = year1[2]        
             month=strptime(date[1],'%b').tm_mon
             time_zone = mo[4]
-            #Identify time zone
+            #Identify time zone.
             zone = identify_time_zone(time_zone)
             tzone=timezone(zone)
             date_hour=tzone.localize(datetime.datetime(int(year),int(month),int(date[0]),int(hour[1]),int(hour[2]),int(hour[3])))
             one_hour = datetime.timedelta(hours=1)
-            #Count times accessed in 60 minutes window
+            #Count times accessed in 60 minutes window.
             if hourlist == []:
                 hourlist.append([date_hour,1])
             else:
@@ -86,11 +86,11 @@ with open('log.txt','r') as myfile:
                             hourlist[i][1] = hourlist[i][1]+1
                 if same == 0:
                     hourlist.append([date_hour,1])
-            #Find in IP address is blocked or not
+            #For Feature 4, find in IP address is blocked or not.
             seconds20 = datetime.timedelta(seconds=20)
             minutes5 = datetime.timedelta(minutes=5)
             try:
-                #Block if the same IP address has status blocked and time difference is less than 5 miuntes
+                #Block if the same IP address has status blocked and time difference is less than 5 miuntes.
                 if IP_address_fails[mo[0]][2]=='blocked':
                     if date_hour-IP_address_fails[mo[0]][3]<=minutes5:
                         feature4file.write(line)
@@ -136,7 +136,7 @@ with open('log.txt','r') as myfile:
     sorted_resources = sorted(sorted_resources, key=lambda tup: (-tup[1], tup[0]))
     #List in descending order the most active 60 minutes windows
     sorted_hours = sorted(hourlist, key=lambda x: x[1], reverse=True)
-    #List in descendi
+    #Print files for Features 1, 2, and 3.
     feature1file = open('hosts.txt','w')
     feature2file = open('resources.txt','w')
     feature3file = open('hours.txt','w')
