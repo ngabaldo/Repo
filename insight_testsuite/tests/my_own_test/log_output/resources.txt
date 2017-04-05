@@ -6,5 +6,5 @@
 /logout
 /htbin/cdt_clock.pl
 /htbin/wais.pl?sati*
-/mafc/astro_home.html(2k)
 /L^??|
+/Titles?qt=nasa
