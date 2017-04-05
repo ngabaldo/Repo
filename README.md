@@ -1,6 +1,6 @@
 1) Program description 
 
-src.py is a Python program that runs with standard modules (there is no need to download any additional modules). The program:
+src.py is a Python program that:
 
 (1) Lists the top 10 most active hosts/PI addresses that have accessed the site. 
 
@@ -10,6 +10,9 @@ src.py is a Python program that runs with standard modules (there is no need to 
 
 (4) Detects patterns of three failed login attempts from the same IP address over 20 seconds so that all further attempts to the site can be blocked for 5 minutes and logs those further attempts.
 
+------------------------------------------------------------------
+| NOTE: src.py needs the pytz module to run. The tests were run on a desktop computer, but the cluster to run 
+|
 
 2) Input files 
 
