@@ -1,0 +1,10 @@
+link097.txdirect.net,13
+ix-or10-06.ix.netcom.com,12
+dynip42.efn.org,11
+205.189.154.54,9
+port26.annex2.nwlink.com,9
+unicomp6.unicomp.net,9
+isdn6-34.dnai.com,8
+199.72.81.55,7
+onyx.southwind.net,7
+ppp-nyc-3-1.ios.com,7
