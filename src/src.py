@@ -130,8 +130,10 @@ with open('log.txt','r') as myfile:
             continue
     #List in descending order the active hosts/IP addresses that have accessed the site.
     sorted_websites = sorted(weblist.items(), key=operator.itemgetter(1),reverse=True)
+    sorted_websites = sorted(sorted_websites, key=lambda tup: (-tup[1], tup[0]))
     #List in descending order the resources on the site that consume the most bandwidth.
     sorted_resources= sorted(resourcelist.items(), key=operator.itemgetter(1),reverse=True)
+    sorted_resources = sorted(sorted_resources, key=lambda tup: (-tup[1], tup[0]))
     #List in descending order the most active 60 minutes windows
     sorted_hours = sorted(hourlist, key=lambda x: x[1], reverse=True)
     #List in descendi
