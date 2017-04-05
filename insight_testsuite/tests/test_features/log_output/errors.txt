@@ -1,0 +1,4 @@
+Detected a strange line in log.txt: 
+
+Detected a strange line in log.txt: 
+1
