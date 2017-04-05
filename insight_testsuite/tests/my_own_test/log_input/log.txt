@@ -1,0 +1,53 @@
+208.:::271.69.50 - - [01/Jul/1995:00:06:43 -0400] "POST /login HTTP/1.0" 401 1420
+207.109.29.70 - - [01/Jul/1995:01:28:35 -0400] "POST /login HTTP/1.0" 401 1420
+207.1***09.29.70 - - [01/Jul/1995:01:28:36 -0400] "POST /login HTTP/1.0" 401 1420
+207.109.29.70 - - [01/Jul/1995:01:28:37 -0400] "POST /login HTTP/1.0" 200 1420
+207.109.29.70 - - [01/Jul/1995:01:28:38 -0400] "POST /logout HTTP/1.0" 200 2245
+
+207.109.29.70 - - [01/Jul/1995:01:28:39 -0400] "POST /login HTTP/1.0" 401 1420
+223.178.18.28 - - [01/Jul/1995:01:39:19 -0400] "POST /login HTTP/1.0" 401 1420
+223.154.39.83 - - [01/Jul/1995:02:04:27 -0400] "POST /login HTTP/1.0" 401 1420
+216.259.27.11 - - [01/Jul/1995:02:21:07 -0400] "POST /login HTTP/1.0" 401 1420
+209.219.27.49 - - [01/Jul/1995:02:41:46 -0400] "POST /login HTTP/1.0" 401 1420
+215.196.44.15 - - [01/Jul/1995:02:48:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:51:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:51:21 -0400] "POST /login HTTP/1.0" 401 1420
+1
+207.246.17.94 - - [01/Jul/1995:02:51:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:52:22 -0400] "POST /login HTTP/1.0" 304 1420
+207.246.17.94 - - [01/Jul/1995:02:53:22 -0400] "POST /login HTTP/1.0" 200 1420
+207.246.17.94 - - [01/Jul/1995:02:54:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:55:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:56:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:57:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:57:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:57:22 -0400] "POST /login HTTP/1.0" 201 1420
+207.246.17.94 - - [01/Jul/1995:02:57:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:57:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:02:57:22 -0400] "POST /login HTTP/1.0" 401 -
+207.246.17.94 - - [01/Jul/1995:02:59:22 -0400] "POST /login HTTP/1.0" 401 -
+207.246.17.94 - - [01/Jul/1995:03:00:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:03:01:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:03:02:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:03:03:22 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:03:03:21 -0400] "POST /login HTTP/1.0" 401 1420
+207.246.17.94 - - [01/Jul/1995:03:03:42 -0400] "POST /login HTTP/1.0" 401 1420
+ix-nbw-nj1-22.ix.netcom.com - - [01/Jul/1995:10:42:09 -0400] "GET /finger @net.com HTTP/1.0" 404 -
+ix-aus1-04.ix.netcom.com - - [03/Jul/1995:23:36:16 -0400] "GET /persons/nasa-cm/mailto:dumoulin@titan.ksc.nasa.gov HTTP/1.0" 404 -
+ix-aus1-04.ix.netcom.com - - [03/Jul/1995:23:36:29 -0400] "GET /persons/nasa-cm/mailto:dumoulin@titan.ksc.nasa.gov HTTP/1.0" 404 -
+ix-aus1-04.ix.netcom.com - - [03/Jul/1995:23:36:36 -0400] "GET /persons/nasa-cm/mailto:dumoulin@titan.ksc.nasa.gov HTTP/1.0" 404 -
+blazemonger.pc.cc.cmu.edu - - [11/Jul/1995:17:56:06 -0400] "GET /htbin/cdt_clock.pl HTTP/1.0From:  <berend@blazemonger.pc.cc.cmu.edu>" 200 751
+blazemonger.pc.cc.cmu.edu - - [11/Jul/1995:17:56:18 -0400] "GET /htbin/cdt_clock.pl HTTP/1.0From:  <berend@blazemonger.pc.cc.cmu.edu>" 200 751
+gate.texaco.com - - [04/Jul/1995:18:01:01 -0400] "GET /shuttle/technology/sts-newsref/mission_profile.html#aoa_abort HTTP/1.0" 404 -
+gate.texaco.com - - [04/Jul/1995:18:01:12 -0400] "GET /shuttle/technology/sts-newsref/mission_profile.html#rtls_abort HTTP/1.0" 404 -
+phoenix#8.ncpc.gov - - [13/Jul/1995:10:36:51 -0400] "GET /shuttle/missions/sts-70/images/images.html HTTP/1.0" 200 4048
+163.205.12.75 - - [19/Jul/1995:08:36:42 -0400] "GET /L^??|???NuNV HTTP/1.0" 404 -
+a&s26.uwyo.edu - - [18/Jul/1995:11:47:54 -0400] "GET /history/history.html HTTP/1.0" 200 1602
+ppp-mia-79.shadow.net - - [26/Jul/1995:11:15:22 -0400] "GET /mafc/astro_home.html(2k) HTTP/1.0" 404 -
+ppp-236-100.neta.com - - [04/Jul/1995:11:35:40 -0400] "GET /shuttle/technology/sts-newsref/sts-lcc.html (31K) HTTP/1.0" 200 32252
+dd01-076.compuserve.com - - [05/Jul/1995:18:16:41 -0400] "GET /facilities/mila.html>Merritt Island Spaceflight Tracking and Data Network Station (MILA)</a>" 404 -
+202.6.90.68 - - [01/Jul/1995:03:44:59 -0400] "GET /Titles?qt=nasa HTTP/1.0" 404 -
+reqa-027.ucdavis.edu - - [01/Jul/1995:01:15:30 -0400] "GET /htbin/wais.pl?apollo+flight HTTP/1.0" 200 4668
+a&s26.uwyo.edu - - [18/Jul/1995:11:47:54 -0400] "GET /history/history.html HTTP/1.0" 200 1602
+fw26.dfw.net - - [06/Jul/1995:00:31:40 -0400] "GET /htbin/wais.pl?sati* HTTP/1.0" 200 404
+202.251.172.60 - - [14/Jul/1995:04:10:23 -0400] "GET /shuttle/missions/sts-65/mission-sts-65.htmlh????||(?HTTP/1.0" 404 -
