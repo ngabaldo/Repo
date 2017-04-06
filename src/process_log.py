@@ -1,5 +1,5 @@
 #!/usr/bin/python
-#! src.py - A program that performs basic analytics on server log file, provides useful metrics, and implements basic security measures
+#! process_log.py - A program that performs basic analytics on server log file, provides useful metrics, and implements basic security measures
 
 import sys
 from collections import OrderedDict
