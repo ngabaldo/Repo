@@ -1,10 +1,10 @@
 ------------------------------------------------------------------
-NOTE: src.py needs the pytz module to run to make it timezone aware. The tests were run on a desktop computer and I could not access a system to run ".sh" files. That is why I could not run "run_results.sh". The results from the desktop computer were correct in all cases when tested. 
+NOTE: process_log.py needs the pytz module to run to make it timezone aware. The tests were run on a desktop computer and I could not access a system to run ".sh" files. That is why I could not run "run_results.sh". The results from the desktop computer were correct in all cases when tested. 
 ------------------------------------------------------------------
 
 1) Program description 
 
-src.py is a Python program that:
+process_log.py is a Python program that:
 
 (1) Lists the top 10 most active hosts/PI addresses that have accessed the site. 
 
@@ -46,4 +46,4 @@ The program generates 4 outputs:
 
 4) Running the program 
 
-scr.py only needs the pytz module installed and the input file to run. Blank lines in the input file will be ignored. All lines in the input file that deviate from the information described in (2) will be ignored and will be printed to the "errors.txt" output file to analyze separately. 
+process_log.py only needs the pytz module installed and the input file to run. Blank lines in the input file will be ignored. All lines in the input file that deviate from the information described in (2) will be ignored and will be printed to the "errors.txt" output file to analyze separately. 
